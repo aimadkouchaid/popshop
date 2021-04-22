@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+* {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none !important;
+}
+body{
+  position: relative;
+  transition: .5s;
+  padding: 64px 0 0 68px;
+}
+.header.active {
+  padding-left: 223px;
+}
+.header.active .headertoggle {
+  padding-left: 22px;
+}
+.header{
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: #F7F6FB;
+  z-index: 100;
+  transition: .5s;
+}
+.headertoggle {
+    color: #25a954;
+    font-size: 1.6rem;
+    cursor: pointer;
+    height: 100%;
+    line-height: 34px;
+}
+.righthd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search i {
+  font-size: 20px;
+  color: #25a954;
+}
+.cart i {
+  font-size: 22px;
+  color: #25a954;
+}
+.profile i {
+  font-size: 22px;
+  color: #25a954;
+}
+.search {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.cart {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.profile{
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.l-navbar{
+  position: fixed;
+  top: 0;
+  left: -30%;
+  width: 68px;
+  height: 100vh;
+  background-color: #25a954;
+  padding: .5rem 1rem 0 0;
+  transition: .5s;
+  z-index: 100;
+}
+.nav{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.navlogo, .navlink{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  column-gap: 1rem;
+  padding: .5rem 0 .5rem 1.5rem;
+}
+.navlogo{
+  margin-bottom: 2rem;
+}
+.navlogo-icon{
+  font-size: 1.25rem;
+  color: #F7F6FB;
+}
+.navlogo-name{
+  color: #F7F6FB;
+  font-weight: 700;
+}
+.navlink{
+  position: relative;
+  color: #8CC6A1;
+  margin-bottom: 1.5rem;
+  transition: .3s;
+}
+.navlink:hover{
+  color: #F7F6FB;
+}
+.navicon{
+  font-size: 1.25rem;
+}
+.show{
+  left: 0;
+}
+
+.active{
+  color: #F7F6FB;
+}
+.active::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 32px;
+  background-color: #F7F6FB;
+}
+.lefthd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+.lefthd h2 {
+    color: #25a954;
+    font-size: 21px;
+    margin: 0;
+    font-family: 'Ubuntu';
+    margin-left: 8px;
+}
+.content {
+    width: 100%;
+    position: relative;
+    min-height: calc(100vh - 64px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d0eedb;
+}
+.aboutcontent {
+    width: 100%;
+    position: relative;
+    min-height: calc(100vh - 64px);
+    background: #d0eedb;
+    padding: 30px;
+}
+.aboutcontent h1 {
+    color: #25a954;
+    text-align: center;
+    font-family: 'Satisfy';
+    font-weight: 900;
+    font-size: 50px;
+}
+.aboutcontent p {
+    color: #85a490;
+    text-align: center;
+    font-family: 'Ubuntu';
+    line-height: 26px;
+}
+.content form {
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 600px;
+}
+.content form legend {
+    color: #25a954;
+    text-align: center;
+    font-family: 'Satisfy';
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.input-group {
+    margin-bottom: 10px;
+}
+.input-group:first-child {
+    margin-top: 10px;
+}
+.content form textarea {
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 10px;
+    padding-left: 18px;
+    resize: none;
+}
+.input-group input {
+    background: #fff;
+    border-radius: 10px;
+    height: 45px;
+    padding-left: 18px;
+}
+.content form button {
+    width: 100%;
+    height: 45px;
+    background: #5acc83;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.uk-input:focus, .uk-select:focus, .uk-textarea:focus {
+    border-color: #25a954 !important;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+    .header{
+      height: calc(3rem + 1rem);
+      padding: 0 2rem 0 calc(68px + 1.75rem);
+    }
+    .l-navbar{
+      left: 0;
+      padding: 1rem 1rem 0 0;
+    }
+    .show{
+      width: 224px;
+    }
+  }
